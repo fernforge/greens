@@ -1,0 +1,24 @@
+{
+  "name": "greens",
+  "version": "1.0.0",
+  "description": "Greens — a 2.5D top-down farming RPG progression game.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js",
+    "test": "node test/smoke.mjs",
+    "shots": "node test/render.mjs",
+    "dist": "node scripts/dist.mjs"
+  },
+  "keywords": [
+    "game",
+    "farming",
+    "rpg",
+    "canvas"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.0.0",
+    "jszip": "^3.10.1"
+  }
+}
