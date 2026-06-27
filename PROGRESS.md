@@ -4,9 +4,11 @@
 A complete, production-grade, RPG/farming progression **2.5D top-down** game ("Greens").
 Lots of content, game saving, polish. Browser-based (HTML5 Canvas + vanilla ES modules),
 zero build step. Signature differentiator: **crop genetics / plant breeding** (shareable seed codes).
-**Current task: publish to GitHub + GitHub Pages.**
+**Current task: publish to GitHub + GitHub Pages — ✅ DONE.**
 
 ## Current state
+- ✅ PUBLISHED: repo https://github.com/fernforge/greens — LIVE at https://fernforge.github.io/greens/
+  Verified live via Playwright: canvas mounts, no console errors, title screen renders.
 - Game is COMPLETE and verified: `node test/smoke.mjs` → ALL PASSED (29 checks). ~6,976 LOC.
 - All art/audio procedurally generated at runtime; save via localStorage.
 - Static site: `index.html` + `src/` is the whole runtime (no bundler needed for hosting).
@@ -15,17 +17,17 @@ zero build step. Signature differentiator: **crop genetics / plant breeding** (s
   skills, achievements, almanac, tutorial, and crop-breeding genetics all done & tested.
 - Docs present: README.md, DEPLOY.md, DIFFERENTIATION.md, PLAYTEST.md.
 
-## What's left (current task: publish)
-- [ ] `git init` + initial commit (repo is not yet a git repo).
-- [ ] Create GitHub repo `fernforge/greens` via API, push.
-- [ ] Enable GitHub Pages (serve from repo root, main branch) — site is static, works as-is.
-- [ ] Verify the Pages URL loads the game.
-- [ ] Update README with the live Pages link.
+## What's left
+Nothing for the publish task — all complete:
+- [x] git init + initial commit (59 files), branch `main`.
+- [x] Created GitHub repo `fernforge/greens` via API, pushed.
+- [x] Enabled GitHub Pages (root of `main`); `.nojekyll` added.
+- [x] Verified Pages URL loads (HTTP 200) and game renders in Playwright (no errors).
+- [x] README updated with the live Pages link.
+Future (optional, pre-existing backlog): animals/barn, greenhouse, roguelike Run mode, find testers.
 
 ## Next concrete step
-Run `git init`, add a `.nojekyll` file (so `_`-prefixed paths aren't stripped), commit, create
-the GitHub repo via `curl` API (token in `$GH_TOKEN`, user `fernforge`), push, then enable Pages
-via the API (`source.branch=main`, `source.path=/`).
+Task done. If resumed: nothing required. To redeploy after edits, just `git push` (Pages auto-rebuilds).
 
 ## Key decisions & why
 - **Vanilla JS + Canvas2D, no build**: runs anywhere; Pages can serve repo root directly.
