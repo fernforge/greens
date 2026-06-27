@@ -7,6 +7,10 @@ Web Audio API.
 
 ## Play
 
+**▶ Play instantly in your browser: https://fernforge.github.io/greens/**
+
+Or run it locally:
+
 ```bash
 npm start
 # open http://localhost:5173 in your browser
